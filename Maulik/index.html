@@ -265,7 +265,7 @@ updateCarousels();
     <img src="pics/markets/hygiene.svg" alt="Logo" class="card-logo">
     <div class="card-header-content">
       <div class="card-title">Hygiene</div>
-      <p class="card-desc">At MAULIK, we deliver scientifically advanced and market-responsive ingredient solutions for the personal care and hygiene sectors</p>
+      <p class="card-desc">At MAULIK, we deliver scientifically advanced and market-responsive ingredient solutions for the personal care and hygiene sectors...</p>
     </div>
   </div>
   <div class="card-footer">
@@ -301,7 +301,7 @@ updateCarousels();
     <img src="pics/markets/clothesline.svg" alt="Logo" class="card-logo">
     <div class="card-header-content">
       <div class="card-title">Textile, Leather and Footwear</div>
-      <p class="card-desc">At MAULIK, we deliver advanced material and chemical solutions across the textile, leather, and footwear value chains.</p>
+      <p class="card-desc">At MAULIK, we deliver advanced material and chemical solutions across the textile, leather, and footwear value chains...</p>
     </div>
   </div>
   <div class="card-footer">
@@ -589,6 +589,19 @@ segmentsBtn.addEventListener('click', function() {
   marketsGrid.style.display = 'none';
   segmentsGrid.style.display = 'grid';
 });
+</script>
+
+<!-- Scroll Animations -->
+<script>
+  // Debug: Check if script loads
+  console.log('Main script running');
+  
+  // Load scroll animations
+  const script = document.createElement('script');
+  script.src = 'js/scroll-animations.js';
+  script.onload = () => console.log('Scroll animations script loaded');
+  script.onerror = () => console.error('Error loading scroll animations');
+  document.body.appendChild(script);
 </script>
 
 </body>
