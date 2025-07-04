@@ -755,28 +755,6 @@ font-weight: 500;
 }
 }
 
-@media (max-width: 1280px) {
-.markets-grid, .segments-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr) !important;
-  grid-auto-rows: 1fr;
-  gap: 16px 16px;
-  max-width: 100%;
-  margin: 12px auto 0 auto;
-  justify-content: center;
-  align-items: start;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-.market-card, .segment-card {
-  width: 100% !important;
-  max-width: 340px;
-  height: 220px !important;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-}
-
 @media (max-width: 1024px) {
 .markets-grid, .segments-grid {
   grid-template-columns: repeat(3, 1fr) !important;
@@ -1403,22 +1381,61 @@ white-space: nowrap;
 text-decoration: underline;
 }
 
-
-/* Font Awesome for social icons */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
-
-/* Responsive styles */
 /* Exact 1280px width */
 @media (width: 1280px) {
+
+  .carousel-wrapper {
+    margin: -40px 0px 0 80px;
+  }
+
+  .gray-bar {
+    max-width: 1210px;
+    margin-left: 24px;
+    padding-left: 0;
+  }
+
+  .markets-grid, .segments-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-auto-rows: 1fr;
+    gap: 16px 16px;
+    max-width: 100%;
+    margin: 12px auto 0 auto;
+    justify-content: center;
+    align-items: start;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .market-card, .segment-card {
+    width: 100% !important;
+    max-width: 400px;
+    height: 220px !important;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+
 .innovation-card {
   width: 380px;
   max-width: 380px;
   min-width: 380px;
 }
+
+.sustainability-image img {
+  width:600px;
+}
+
+.news-cards {
+  justify-content: center;
+  gap: 15px;
+}
+
+.news-card {
+  width: 300px;
 }
 
 /* For smaller than 1280px */
-@media (max-width: 1279px) {
+@media (max-width: 1280px) {
 .innovation-card {
   max-width: 350px;
 }
@@ -1447,5 +1464,6 @@ text-decoration: underline;
 .section-subheading {
   font-size: 20px;
   margin-bottom: 40px;
+}
 }
 }
