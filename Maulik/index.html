@@ -3,15 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Banner</title>
+  <title>Maulik</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    /* Force button styles */
+    .innovation-card .learn-more-btn {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      background: transparent !important;
+      color: #000000 !important;
+      border: 2px solid #2970C5 !important;
+      height: 39px !important;
+      padding: 0 30px !important;
+      font-size: 16px !important;
+      font-weight: 400 !important;
+      border-radius: 28px !important;
+      cursor: pointer !important;
+      text-decoration: none !important;
+      transition: all 0.3s ease !important;
+      position: relative !important;
+      overflow: hidden !important;
+      z-index: 1 !important;
+      box-sizing: border-box !important;
+    }
+    
+    .innovation-card .learn-more-btn::before {
+      content: '' !important;
+      position: absolute !important;
+      top: 0 !important;
+      left: 0 !important;
+      width: 0 !important;
+      height: 100% !important;
+      background-color: #2970C5 !important;
+      transition: width 0.3s ease !important;
+      z-index: -1 !important;
+      border-radius: 28px !important;
+    }
+    
+    .innovation-card .learn-more-btn:hover {
+      color: #FFFFFF !important;
+    }
+    
+    .innovation-card .learn-more-btn:hover::before {
+      width: 100% !important;
+    }
+  </style>
 </head>
 <body>
   <header class="main-banner">
     <div class="banner-content">
       <div class="logo-container">
-        <img src="pics/MAULIK LOGO WEB 1.svg" alt="Logo" class="banner-logo" width="167" height="59" style="display: block;">
+        <img src="pics/MAULIK LOGO WEB 1.svg" alt="Logo" class="banner-logo">
       </div>
       <nav class="banner-nav">
         <a href="#" class="nav-link">About Us</a>
@@ -24,18 +68,19 @@
                 <button class="search-btn"><img src="pics/search.png" alt="Search" /></button>
               </div>
               <ul class="dropdown-list">
-                <li>Adhesives And Sealants</li>
-                <li>Agriculture</li>
-                <li>Construction</li>
-                <li>Furniture & Wood</li>
-                <li>Homecare And I&I Cleaning</li>
-                <li>Nutrition</li>
-                <li>Packaging, Print & Paper</li>
-                <li>Paints And Coating</li>
-                <li>Personal Care And Hygiene</li>
-                <li>Pharmaceuticals</li>
-                <li>Plastics & Rubber</li>
-                <li>Textile, Leather And Footwear</li>
+                <li><a href="adhesives.html">Adhesives And Sealants</a></li>
+                <li><a href="agriculture.html">Agriculture</a></li>
+                <li><a href="construction.html">Construction</a></li>
+                <li><a href="furniture-wood.html">Furniture & Wood</a></li>
+                <li><a href="homecare-cleaning.html">Homecare And I&I Cleaning</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="packaging.html">Packaging, Print & Paper</a></li>
+                <li><a href="paints-coating.html">Paints And Coating</a></li>
+                <li><a href="personal-care.html">Personal Care And Hygiene</a></li>
+                <li><a href="pharmaceuticals.html">Pharmaceuticals</a></li>
+                <li><a href="plastics-rubber.html">Plastics & Rubber</a></li>
+                <li><a href="leather.html">Textile, Leather And Footwear</a></li>
+                <li><a href="">Segments</a></li>
               </ul>
             </div>
           </div>
@@ -75,7 +120,7 @@
   </header>
 
 <section class="hero-banner">
-  <h1 class="hero-heading">Greater Chemistry For A Better Future</h1>
+  <h1 class="hero-heading">Greater Chemistry For A Better Tomorrow</h1>
   <img src="pics/Frame 110.png" alt="Hero Banner" class="hero-image">
 </section>
 
@@ -305,7 +350,7 @@ updateCarousels();
     </div>
   </div>
   <div class="card-footer">
-    <a href="#market12" class="learn-more">Learn More</a>
+    <a href="leather.html" class="learn-more">Learn More</a>
   </div>
 </div>
 </div>
@@ -414,7 +459,7 @@ updateCarousels();
     </div>
     
     <!-- Card 2 -->
-    <div class="innovation-card">
+    <div class="innovation-card" style="margin-top: 15px;">
       <div class="card-icon">
         <img src="pics/innovationhub/microscope-svgrepo-com 1.svg" alt="Innovation Icon 2">
       </div>
@@ -424,7 +469,7 @@ updateCarousels();
     </div>
     
     <!-- Card 3 -->
-    <div class="innovation-card">
+    <div class="innovation-card" style="margin-top: 15px;">
       <div class="card-icon">
         <img src="pics/innovationhub/atom-svgrepo-com 1.svg" alt="Innovation Icon 3">
       </div>
@@ -478,35 +523,44 @@ updateCarousels();
 
 <!-- News and Insights Section -->
 <section class="news-section">
-  <div class="container">
-    <h2 class="news-heading">News and Insights</h2>
+  <h2 class="section-title">News and Insights</h2>
+  <div class="news-container">
+    <!-- Left side with large image -->
+    <div class="news-main">
+      <div class="news-image-large">
+        <img src="pics/Sustainability.png" alt="Main News" width="519" height="391">
+      </div>
+      <div class="news-content">
+        <h3 class="news-heading">Revolutionizing Packaging with Maulik’s Polymer Solution</h3>
+        <p class="news-text">Discover how Maulik innovative polymer solutions are transforming the packaging industry with sustainable, high-performance materials.</p>
+        <a href="#" class="read-more">Read more</a>
+      </div>
+    </div>
     
-    <div class="news-cards">
-      <!-- Card 1 -->
-      <div class="news-card">
-        <div class="card-content">
-          <h3 class="news-title">Latest Innovations</h3>
-          <p class="news-date">Nov 08, 2024</p>
+    <!-- Right side with two smaller news items -->
+    <div class="news-sidebar">
+      <!-- News Item 1 -->
+      <div class="news-item">
+        <div class="news-image-small">
+          <img src="pics/Sustainability.png" alt="Innovation 1" width="302" height="284">
         </div>
-        <a href="#" class="view-details">View Details</a>
+        <div class="news-details">
+          <h4 class="news-title">The Future of Sustainable Polymers</h4>
+          <p class="news-excerpt">Maulik is leading the charge in developing sustainable polymers that reduce environmental impact while maintaining…</p>
+          <a href="#" class="read-more">Read more</a>
+        </div>
       </div>
       
-      <!-- Card 2 -->
-      <div class="news-card">
-        <div class="card-content">
-          <h3 class="news-title">Industry News</h3>
-          <p class="news-date">Nov 08, 2024</p>
+      <!-- News Item 2 -->
+      <div class="news-item">
+        <div class="news-image-small">
+          <img src="pics/Sustainability.png" alt="Innovation 2" width="302" height="284">
         </div>
-        <a href="#" class="view-details">View Details</a>
-      </div>
-      
-      <!-- Card 3 -->
-      <div class="news-card">
-        <div class="card-content">
-          <h3 class="news-title">Company News</h3>
-          <p class="news-date">Nov 08, 2024</p>
+        <div class="news-details">
+          <h4 class="news-title">Maulik Role in Advancing Renewable Energy Solutions</h4>
+          <p class="news-excerpt">Discover how Maulik is contributing to the global shift towards renewable energy with innovative materials…</p>
+          <a href="#" class="read-more">Read more</a>
         </div>
-        <a href="#" class="view-details">View Details</a>
       </div>
     </div>
   </div>
@@ -523,7 +577,7 @@ updateCarousels();
     <div class="footer-middle">
       <h4>Links</h4>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Market and Solutions</a></li>
         <li><a href="#">Innovation</a></li>
@@ -553,7 +607,7 @@ updateCarousels();
         <a href="#" class="social-icon"><img src="pics/Icons/ic_baseline-facebook.svg" alt="Facebook"></a>
         <a href="#" class="social-icon"><img src="pics/Icons/lets-icons_insta.svg" alt="Instagram"></a>
         <a href="#" class="social-icon"><img src="pics/Icons/ic_baseline-whatsapp.svg" alt="WhatsApp"></a>
-        <a href="#" class="social-icon"><img src="pics/Icons/mdi_twitter.svg" alt="Twitter"></a>
+        <a href="#" class="social-icon"><img src="pics/Icons/prime_twitter.svg" alt="Twitter"></a>
       </div>
     </div>
   </div>
